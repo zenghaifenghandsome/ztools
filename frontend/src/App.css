@@ -15,3 +15,14 @@
     display: grid;
     grid-template-columns: repeat(3,33.3%);
 }
+.content-home{
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+.content-home-menu{
+    background-color: #e2ebf0;
+    color: black;
+}
+.content-home-menu-list{
+   list-style: none; 
+}

@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 function App() {
    const nav = useNavigate();
     useEffect(()=>{
-        nav('/home');
+        nav('/home/all');
    },[]) 
 
     return (

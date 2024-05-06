@@ -4,7 +4,7 @@ const Header = () => {
     return(
         <div className="header-body">
             <div>
-                <IconCodeSandbox />
+                <IconCodeSandbox style={{height:30,width:30}}/>
             </div>
             <div>
                 <Input style={{width:300}} placeholder='Please Enter Code'/>     
