@@ -1,13 +1,18 @@
 import { Button, Card, Input } from "@arco-design/web-react";
-
+import {GetUsers} from "../../wailsjs/go/main/App"
 const wball = () => {
+    const submit = () => {
+        GetUsers("zeng").then(req => {
+            console.log(req)
+        })
+    }
     return(
         <div>
             <div>
                 <Card>
                     <Input.TextArea />
                     <div>
-                        <Button type="primary">发布</Button>
+                        <Button type="primary" onClick={submit}>发布</Button>
                     </div>
                 </Card>
                 <Card>

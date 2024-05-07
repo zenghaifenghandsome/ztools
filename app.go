@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
+	"ztools/db"
 )
 
 // App struct
@@ -24,4 +25,10 @@ func (a *App) startup(ctx context.Context) {
 // Greet returns a greeting for the given name
 func (a *App) Greet(name string) string {
 	return fmt.Sprintf("Hello %s, It's show time!", name)
+}
+
+func (a *App) GetUsers(username string) db.User {
+	var us db.User
+	db.Zdb.First(&us,"user_name = ?",username)
+	return us
 }
