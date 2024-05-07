@@ -1,8 +1,6 @@
 package db
 
 import (
-	"ztools/db"
-
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
 )
@@ -15,5 +13,5 @@ func init() {
 	if zerror != nil {
 		panic("failed to connect database")
 	}
-	db.AutoMigrate(&db.User{})
+	Zdb.AutoMigrate(&Zt_user{})
 }

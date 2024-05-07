@@ -6,6 +6,7 @@ toolchain go1.22.2
 
 require (
 	github.com/wailsapp/wails/v2 v2.8.1
+	gorm.io/driver/sqlite v1.5.5
 	gorm.io/gorm v1.25.10
 )
 
@@ -25,6 +26,7 @@ require (
 	github.com/leaanthony/u v1.1.0 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.19 // indirect
+	github.com/mattn/go-sqlite3 v1.14.17 // indirect
 	github.com/pkg/browser v0.0.0-20210911075715-681adbf594b8 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/rivo/uniseg v0.4.4 // indirect

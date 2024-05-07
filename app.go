@@ -27,8 +27,8 @@ func (a *App) Greet(name string) string {
 	return fmt.Sprintf("Hello %s, It's show time!", name)
 }
 
-func (a *App) GetUsers(username string) db.User {
-	var us db.User
-	db.Zdb.First(&us,"user_name = ?",username)
+func (a *App) GetUsers(username string) db.Zt_user {
+	var us db.Zt_user
+	db.Zdb.First(&us, "user_name = ?", username)
 	return us
 }
