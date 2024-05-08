@@ -26,3 +26,7 @@
 .content-home-menu-list{
    list-style: none; 
 }
+.wb-home-input-foot{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,60px);
+}
